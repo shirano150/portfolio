@@ -1,0 +1,76 @@
+site_name: 서강훈 포트폴리오
+site_description: 게임 서비스 인프라와 서버 아키텍처를 설계해 온 서강훈의 포트폴리오
+docs_dir: docs
+theme:
+  name: material
+  language: ko
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  icon:
+    logo: material/gamepad-variant
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - toc.follow
+    - search.highlight
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - search:
+      lang: ko
+nav:
+  - 홈: index.md
+  - 서비스 인프라 · 런칭 역량 요약: summary.md
+  - 소개: about.md
+  - 경력: career.md
+  - 프로젝트:
+      - projects/index.md
+      - 트랜스포머 멀티 쇼크: projects/transformers-multi-shock.md
+      - Dubium: projects/dubium.md
+      - Relic Keepers: projects/relic-keepers.md
+      - 리니지 레드 나이츠: projects/lineage-red-knights.md
+      - 마블 퓨처 파이트: projects/marvel-future-fight.md
+      - 마계촌 온라인: projects/makaimura-online.md
+      - L.O.E: projects/loe.md
+      - Menta: projects/menta.md
+  - 기술 스택: tech-stack.md
+  - 서버 인프라 구성:
+      - infra/index.md
+      - PC 캐주얼 게임 서버 구조 (사례 A): infra/case-a.md
+      - MORPG 서버 구조 (사례 B): infra/case-b.md
+      - 모바일 RPG 웹 서버 구조 (사례 C): infra/case-c.md
+      - PC 매치형 멀티플레이 서버 구조 (사례 D): infra/case-d.md
+  - 개인 모바일 앱 프로젝트: mobile-apps.md
+  - AI로 만든 프로젝트 관리 대시보드: dashboard.md

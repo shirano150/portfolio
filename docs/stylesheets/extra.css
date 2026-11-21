@@ -1,0 +1,30 @@
+/* 본문 폭을 넓혀 위키처럼 보이게 */
+.md-grid { max-width: 1440px; }
+/* 표를 본문 전체 폭으로 */
+.md-typeset__scrollwrap { width: 100%; }
+.md-typeset__table { display: block; width: 100%; }
+.md-typeset table:not([class]) { display: table; width: 100%; font-size: .78rem; }
+.md-typeset table:not([class]) th { white-space: nowrap; }
+.md-typeset table:not([class]) td:first-child { white-space: nowrap; font-weight: 500; }
+/* 이미지 */
+.md-typeset img.cover { width: 100%; border-radius: 10px; }
+.md-typeset img.diagram { width: 100%; border-radius: 8px; border: 1px solid var(--md-default-fg-color--lightest); background: #fff; }
+.md-typeset img.shot { width: 100%; border-radius: 8px; border: 1px solid var(--md-default-fg-color--lightest); }
+/* 앱 카드 */
+.app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.app-card { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 12px; padding: 1rem 1.1rem; background: var(--md-default-bg-color); }
+.md-typeset .app-card h3 { margin: .5rem 0 .2rem; }
+.md-typeset .app-card img { width: 56px; height: 56px; border-radius: 14px; }
+.md-typeset .app-card p { margin: .4em 0; }
+.md-typeset .app-card ul { margin: .4em 0 .4em .2em; }
+.app-meta { color: var(--md-default-fg-color--light); font-size: .72rem; }
+.app-stack { font-size: .7rem; color: var(--md-default-fg-color--light); }
+.app-platform { color: #e67700; font-weight: 600; }
+.st-live { color: #2b8a3e; } .st-dev { color: #1971c2; } .st-proto { color: #868e96; } .st-stop { color: #c92a2a; }
+.muted { color: var(--md-default-fg-color--light); }
+/* 홈 카드 */
+.md-typeset .grid.cards > ul > li { border-radius: 10px; }
+/* 한국어 단어 단위 줄바꿈 */
+.md-typeset { word-break: keep-all; overflow-wrap: anywhere; }
+.md-typeset .admonition, .md-typeset details { font-size: .74rem; }
+.md-typeset__scrollwrap { margin: 1em 0; }
